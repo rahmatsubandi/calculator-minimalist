@@ -13,28 +13,40 @@
 
   <body>
     <div class="container">
-      <h1 class="text-center mt-5">Complex Calculator</h1>
+      <h1 class="text-center mt-5 text-primary">Complex Calculator</h1>
+
+      <!-- input -->
       <div class="row justify-content-center">
-        <div class="form-group">
+        <div class="col-xs-11 col-sm-11 col-md-8 col-lg-6 col-xl-5">
           <input
-            class="form-control mt-5 input"
+            class="form-control mt-4 mb-4 input"
             type="text"
             id="display"
             value=""
           />
         </div>
       </div>
+
+      <!-- Start Calculator -->
       <div class="row justify-content-center">
-        <div class="col-auto">
+        <div class="col-xs-11 col-sm-11 col-md-8 col-lg-6 col-xl-5">
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-danger mt-1 mb-1"
+            id="reset"
+            type="button"
+            name="operator"
+            value="C"
+            onclick="c()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnAns"
             type="button"
             name="operator"
             value="Ans"
           />
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnPi"
             type="button"
             name="operator"
@@ -42,7 +54,7 @@
             onclick="set('3.14')"
           />
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnE"
             type="button"
             name="operator"
@@ -50,7 +62,7 @@
             onclick="factorial()"
           />
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnOParen"
             type="button"
             name="operator"
@@ -58,54 +70,248 @@
             onclick="set('(')"
           />
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnCParen"
             type="button"
             name="operator"
             value=")"
             onclick="set(')')"
           />
-        </div>
-        <div class="col-auto">
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnPcnt"
             type="button"
             name="operator"
             value="%"
             onclick="percent()"
           />
+
           <input
-            class="btn btnn btn-danger ml-1 mr-1 mt-1 mb-1"
-            id="reset"
-            type="button"
-            name="operator"
-            value="AC"
-            onclick="ac()"
-          />
-          <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnRad"
             type="button"
             name="operator"
             value="rad"
           />
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnDeg"
             type="button"
             name="operator"
             value="deg"
           />
           <input
-            class="btn btnn btn-secondary ml-1 mr-1 mt-1 mb-1"
+            class="btn btnn btn-secondary mt-1 mb-1"
             id="btnFact"
             type="button"
             name="operator"
             value="x!"
           />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn7"
+            type="button"
+            value="7"
+            onclick="set('7')"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn8"
+            type="button"
+            value="8"
+            onclick="set('8')"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn9"
+            type="button"
+            value="9"
+            onclick="set('9')"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnDiv"
+            type="button"
+            name="operator"
+            value="÷"
+            onclick="set('/')"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnSineInv"
+            type="button"
+            name="operator"
+            value="asn"
+            onclick="asine()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnSine"
+            type="button"
+            name="operator"
+            value="sin"
+            onclick="sine()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnLN"
+            type="button"
+            name="operator"
+            value="ln"
+            onclick="ln()"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn4"
+            type="button"
+            value="4"
+            onclick="set('4')"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn5"
+            type="button"
+            value="5"
+            onclick="set('5')"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn6"
+            type="button"
+            value="6"
+            onclick="set('6')"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnMul"
+            type="button"
+            name="operator"
+            value="×"
+            onclick="set('*')"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnCosInv"
+            type="button"
+            name="operator"
+            value="acos"
+            onclick="acosine()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnCos"
+            type="button"
+            name="operator"
+            value="cos"
+            onclick="cosine()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnLog"
+            type="button"
+            name="operator"
+            value="log"
+            onclick="fLog()"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn1"
+            type="button"
+            value="1"
+            onclick="set('1')"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn2"
+            type="button"
+            value="2"
+            onclick="set('2')"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn3"
+            type="button"
+            value="3"
+            onclick="set('3')"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnSub"
+            type="button"
+            name="operator"
+            value="-"
+            onclick="set('-')"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnTanInv"
+            type="button"
+            name="operator"
+            value="atan"
+            onclick="atangent()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnTan"
+            type="button"
+            name="operator"
+            value="tan"
+            onclick="tangent()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnSqrt"
+            type="button"
+            name="operator"
+            value="√"
+            onclick="sqrRoot()"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btn0"
+            type="button"
+            value="0"
+            onclick="set('0')"
+          />
+          <input
+            class="btn btnn btn-light mt-1 mb-1"
+            id="btnPeriod"
+            type="button"
+            value="."
+            onclick="set('.')"
+          />
+          <input
+            class="btn btnn btn-outline-danger mt-1 mb-1"
+            id="btnCE"
+            type="button"
+            name="operator"
+            value="CE"
+            onclick="ce()"
+          />
+          <input
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnAdd"
+            type="button"
+            name="operator"
+            value="+"
+            onclick="set('+')"
+          />
+          <input
+            class="btn btn-primary btn-block mt-1 mb-5"
+            id="btnEqual"
+            type="button"
+            name="equal"
+            value="="
+            onclick="answer()"
+          />
         </div>
       </div>
+      <!-- End Calculator -->
+      <footer class="border-top mt-3">
+        <div class="row justify-content-center">
+          <h1 class="h6 mt-4">&copy; Rahmat Subandi 2020</h1>
+        </div>
+      </footer>
     </div>
 
     <script src="../js/complex.js"></script>

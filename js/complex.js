@@ -79,7 +79,7 @@ function answer() {
   Exp.value = result;
 }
 
-function ac() {
+function c() {
   var input = document.getElementById("display").value;
   var field = input.field;
   field = "";

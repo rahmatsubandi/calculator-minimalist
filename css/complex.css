@@ -6,21 +6,22 @@
   user-select: none;
 }
 
-.form-group {
-  width: 61.2%;
-}
 
 .form-control:focus {
-  border: 1px solid #1bb94b;
-  box-shadow: 0 0 0 0.2rem #1bb94a50 !important;
+  border: 1px solid #0055b1;
+  box-shadow: 0 0 0 0.2rem rgba(0, 72, 150, 0.4) !important;
 }
 
 .input {
   font-family: 'Poppins', sans-serif;
 }
 
+.text-primary {
+  color: #0055b1 !important;
+}
+
 .btnn {
-  width: 3.5rem;
+  width: 3.7rem;
 }
 
 .btn-secondary {
@@ -49,6 +50,7 @@
   color: #000 !important;
 }
 
+/* btn-primary */
 .btn-primary {
   background-color: #0055b1;
   border: 1px solid #0055b1;
@@ -71,6 +73,58 @@
 
 .btn-primary:active {
   background-color: #03468f !important;
+  border: 1px solid transparent !important;
+  color: #fff !important;
+}
+
+/* btn-danger */
+.btn-danger {
+  background-color: #d10000;
+  border: 1px solid #d10000;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #a50202;
+  border: 1px solid #a50202;
+  color: #fff;
+}
+
+.btn-danger:focus {
+  background-color: #a50202 !important;
+  border: 1px solid transparent !important;
+  box-shadow: 0 0 0 0.2rem rgba(150, 0, 0, 0.5) !important;
+  color: #fff !important;
+}
+
+.btn-danger:active {
+  background-color: #a50202 !important;
+  border: 1px solid transparent !important;
+  color: #fff !important;
+}
+
+/* btn-outline-danger */
+.btn-outline-danger {
+  background-color: transparent;
+  border: 1px solid #d10000;
+  color: #d10000;
+}
+
+.btn-outline-danger:hover {
+  background-color: #a50202;
+  border: 1px solid #a50202;
+  color: #fff;
+}
+
+.btn-outline-danger:focus {
+  background-color: #a50202 !important;
+  border: 1px solid transparent !important;
+  box-shadow: 0 0 0 0.2rem rgba(150, 0, 0, 0.5) !important;
+  color: #fff !important;
+}
+
+.btn-outline-danger:active {
+  background-color: #a50202 !important;
   border: 1px solid transparent !important;
   color: #fff !important;
 }
