@@ -17,14 +17,14 @@ function acosine() {
   document.getElementById("display").value = eval(Math.acos(tempStore));
 }
 
-function fLog() {
+function log() {
   var tempStore = document.getElementById("display").value;
-  document.getElementById("display").value = eval(Math.log(tempStore));
+  document.getElementById("display").value = eval(Math.log10(tempStore));
 }
 
 function ln() {
   var tempStore = document.getElementById("display").value;
-  document.getElementById("display").value = eval(Math.log(0 + tempStore));
+  document.getElementById("display").value = eval(Math.log(tempStore));
 }
 
 function atangent() {
@@ -51,6 +51,27 @@ function percent() {
   display.value = display.value / 100;
 }
 
+function radians() {
+  display.value = display.value * (Math.PI / 180);
+}
+
+function plusMinus() {
+  if (display.value.charAt(0) === "-") {
+    display.value = display.value.slice(1);
+  } else {
+    display.value = "-" + display.value;
+  }
+}
+
+function exp() {
+  var tempStore = document.getElementById("display").value;
+  document.getElementById("display").value = eval(Math.exp(tempStore));
+}
+
+function degrees() {
+  display.value = display.value * (180 / Math.PI);
+}
+
 function factorial() {
   var number = 1;
   if (display.value === 0) {
@@ -67,7 +88,7 @@ function factorial() {
 }
 
 function setOp() {
-  Swal.fire(`gf`, "", "info");
+  Swal.fire(`gf`, "", "success");
   document.getElementById("display").value += op;
 }
 
@@ -75,7 +96,7 @@ function answer() {
   var Exp = document.getElementById("display");
   var Exp1 = Exp.value;
   var result = eval(Exp1);
-  Swal.fire(`The result is ${result}`, "", "info");
+  Swal.fire(`The result is ${result}`, "", "success");
   Exp.value = result;
 }
 

@@ -39,11 +39,12 @@
             onclick="c()"
           />
           <input
-            class="btn btnn btn-secondary mt-1 mb-1"
-            id="btnAns"
+            class="btn btnn btn-outline-danger mt-1 mb-1"
+            id="btnCE"
             type="button"
             name="operator"
-            value="Ans"
+            value="CE"
+            onclick="ce()"
           />
           <input
             class="btn btnn btn-secondary mt-1 mb-1"
@@ -59,7 +60,7 @@
             type="button"
             name="operator"
             value="e"
-            onclick="factorial()"
+            onclick="exp()"
           />
           <input
             class="btn btnn btn-secondary mt-1 mb-1"
@@ -92,6 +93,7 @@
             type="button"
             name="operator"
             value="rad"
+            onclick="radians()"
           />
           <input
             class="btn btnn btn-secondary mt-1 mb-1"
@@ -99,6 +101,7 @@
             type="button"
             name="operator"
             value="deg"
+            onclick="degrees()"
           />
           <input
             class="btn btnn btn-secondary mt-1 mb-1"
@@ -106,6 +109,7 @@
             type="button"
             name="operator"
             value="x!"
+            onclick="factorial()"
           />
           <input
             class="btn btnn btn-light mt-1 mb-1"
@@ -211,7 +215,7 @@
             type="button"
             name="operator"
             value="log"
-            onclick="fLog()"
+            onclick="log()"
           />
           <input
             class="btn btnn btn-light mt-1 mb-1"
@@ -280,13 +284,14 @@
             value="."
             onclick="set('.')"
           />
+
           <input
-            class="btn btnn btn-outline-danger mt-1 mb-1"
-            id="btnCE"
+            class="btn btnn btn-secondary mt-1 mb-1"
+            id="btnPlusMinus"
             type="button"
             name="operator"
-            value="CE"
-            onclick="ce()"
+            value="±"
+            onclick="plusMinus()"
           />
           <input
             class="btn btnn btn-secondary mt-1 mb-1"
