@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="shortcut icon" href="img/simbol.svg" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Calculator</title>
   </head>
   <body>
-    <a href="calculator/simple.html" target="_blank">Simple Calculator</a>
-    <a href="calculator/complex.html" target="_blank">Complex Calculator</a>
+    <div class="container">
+      <div class="row">
+        <div class="col mt-6 text-center">
+          <h4 class="mb-3">Please choose according to your needs</h4>
+          <div class="col-auto">
+            <a
+              href="calculator/simple.html"
+              target="_blank"
+              class="btn btn-success mr-3"
+              >Simple Calculator</a
+            >
+            <a
+              href="calculator/complex.html"
+              target="_blank"
+              class="btn btn-outline-primary ml-3"
+              >Complex Calculator</a
+            >
+          </div>
+          <div class="col-auto mt-5">
+            <h4>
+              Visit my
+              <a
+                href="https://github.com/rahmatsubandi"
+                target="_blank"
+                class="btn btn-light btn-sm"
+                >Github</a
+              >
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/disableRight.js"></script>
+
+    <!-- Dark Mode -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener("load", addDarkmodeWidget);
+    </script>
+    <!-- Dark Mode Options -->
+    <script src="js/darkMode.js"></script>
   </body>
 </html>
